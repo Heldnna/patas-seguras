@@ -1,0 +1,353 @@
+/* ----------------------------------- */
+/* RESET DE ESTILOS */
+/* ----------------------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif; /* Fonte Playfair Display */
+    background-color: #f7f6f1; /* Cor de fundo suave */
+    color: #333;
+    overflow-x: hidden; /* Previne o scroll horizontal */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo do tamanho */
+}
+
+/* ----------------------------------- */
+/* CABEÇALHO (LOGO + MENU) */
+/* ----------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%; /* Ajustando o padding para diminuir o espaço */
+    background-color: #f7f6f1; /* Cor de fundo suave */
+    color: #ff8000; /* Laranja */
+}
+
+header .logo h1 {
+    font-size: 36px; /* Ajustando o tamanho do título */
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px; /* Um pequeno espaçamento nas letras */
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Menu alinhado à direita */
+}
+
+nav ul li {
+    margin-left: 20px; /* Diminuindo o espaçamento entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Cor do texto do menu, igual ao fundo */
+    font-weight: 400;
+    font-size: 19px; /* Ajustando o tamanho da fonte */
+    text-transform: none; /* Mantendo as letras como estão, sem forçar maiúsculas */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8000; /* Cor laranja ao passar o mouse */
+}
+
+/* ----------------------------------- */
+/* SEÇÃO DE CONTEÚDO (IMAGEM + TEXTO) */
+/* ----------------------------------- */
+.seção {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os elementos */
+    justify-content: center; /* Mantém a distribuição equilibrada */
+    margin: 50px 5%;
+    padding: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+/* IMAGEM ESQUERDA */
+.seção-imagem-esquerda {
+    flex: 1; /* Ocupa 50% do espaço */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seção-imagem-esquerda img {
+    width: 100%; /* Mantém a responsividade */
+    height: 350px; /* Mantém a proporção */
+    max-width: 500px; /* Limita o tamanho da imagem */
+    object-fit: cover; /* Garante um encaixe adequado */
+    border-radius: 10px;
+}
+
+/* TEXTO DIREITA */
+.seção-texto-direita {
+    flex: 1; /* Ocupa 50% do espaço */
+    padding: 0 20px; /* Espaçamento interno para alinhamento melhor */
+    text-align: left;
+}
+
+.seção-texto-direita h2 {
+    font-size: 40px;
+    color: #ff8000;
+    margin-bottom: 10px;
+}
+
+.seção-texto-direita p {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* IMAGEM DIREITA */
+.seção-imagem-direita {
+    flex: 1; /* Ocupa 50% do espaço */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seção-imagem-direita img {
+    width: 100%; /* Mantém a responsividade */
+    height: 350px; /* Mantém a proporção */
+    max-width: 500px; /* Limita o tamanho da imagem */
+    object-fit: cover; /* Garante um encaixe adequado */
+    border-radius: 10px;
+}
+
+/* TEXTO ESQUERDA */
+.seção-texto-esquerda {
+    flex: 1; /* Ocupa 50% do espaço */
+    padding: 0 20px; /* Espaçamento interno para alinhamento melhor */
+    text-align: left;
+}
+
+.seção-texto-esquerda h2 {
+    font-size: 40px;
+    color: #ff8000;
+    margin-bottom: 10px;
+}
+
+.seção-texto-esquerda p {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------- */
+/* CONTEÚDO DAS PÁGINAS (IMAGEM + TEXTO) */
+/* ----------------------------------- */
+/* TEXTO ESQUERDA */
+.seção-texto-esquerda-conteudo {
+    flex: 1; /* Ocupa 50% do espaço */
+    padding: 0 20px; /* Espaçamento interno para alinhamento melhor */
+    text-align: left;
+}
+
+.seção-texto-esquerda-conteudo h2 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.seção-texto-esquerda-conteudo p {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* TEXTO DIREITA */
+.seção-texto-direita-conteudo {
+    flex: 1; /* Ocupa 50% do espaço */
+    padding: 0 20px; /* Espaçamento interno para alinhamento melhor */
+    text-align: left;
+}
+
+.seção-texto-direita-conteudo h2 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.seção-texto-direita-conteudo p {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------- */
+/* ESTILOS DO BOTÃO LEIA MAIS */
+/* ----------------------------------- */
+.btn-leia-mais {
+    font-family: 'Playfair Display', serif; /* A mesma fonte do site */
+    font-size: 14px; /* Tamanho do texto */
+    font-weight: 400; /* Peso da fonte */
+    color: #ff8000; /* Cor do texto laranja */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    /*border: 2px solid #ff8000; /* Borda laranja */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: transparent; /* Fundo transparente */
+    text-align: center; /* Centraliza o texto */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    /*text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    display: inline-block; /* Permite que o botão seja um bloco de linha */
+    margin-top: 20px; /* Espaçamento superior para distanciar do texto */
+}
+
+.btn-leia-mais:hover {
+    background-color: #ff8000; /* Fundo laranja ao passar o mouse */
+    color: #fff; /* Cor do texto em branco ao passar o mouse */
+}
+
+/* ----------------------------------- */
+/* FRASE DE DESTAQUE */
+/* ----------------------------------- */
+.texto-frase {
+    font-size: 28px; /* Tamanho maior da fonte */
+    font-weight: 400; /* Peso da fonte mais leve */
+    color: #ff8000; /* Cor laranja */
+    margin-bottom: 70px; /* Espaçamento inferior */
+    text-align: center; /* Alinhar ao centro */
+    font-style: italic; /* Estilo em itálico */
+}
+
+/* ----------------------------------- */
+/* IMAGEM PRINCIPAL */
+/* ----------------------------------- */
+.imagem-centralizada {
+    width: 100%;
+    max-width: 900px; /* Mantém a largura semelhante ao site de referência */
+    max-height: 350px; /* Define uma altura máxima menor */
+    display: block;
+    margin: 0 auto 40px auto; /* Centraliza a imagem e adiciona espaçamento inferior */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+}
+
+/* ----------------------------------- */
+/* TÍTULO PRINCIPAL */
+/* ----------------------------------- */
+.titulo-principal {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; /* Ajuste conforme necessário */
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    max-width: 900px; /* Ajuste para controlar a largura máxima do título */
+    margin: 50px auto 40px; /* Espaçamento superior ajustado */
+    padding: 0 20px; /* Pequeno padding lateral para evitar tocar as bordas */
+    line-height: 1.2; /* Ajuste do espaçamento entre linhas */
+}
+
+/* ----------------------------------- */
+/* TEXTO CENTRALIZADO ABAIXO DO TÍTULO PRINCIPAL */
+/* ----------------------------------- */
+.texto-centralizado {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; /* Ajuste conforme necessário */
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    width: 100%;
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 40px auto; /* Centraliza o texto verticalmente e horizontalmente */
+    padding: 0 20px; /* Pequeno padding lateral para evitar tocar as bordas */
+}
+
+/* ----------------------------------- */
+/* COR DOS LINKS */
+/* ----------------------------------- */
+/* Define a cor dos links não visitados */
+a {
+    color: #0000FF; 
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Define a cor ao passar o mouse (hover) */
+a:hover {
+    color: #1E90FF;
+}
+
+
+
+/* ----------------------------------- */
+/* RODAPÉ */
+/* ----------------------------------- */
+html, body {
+    height: 100%; /* Garante que a página ocupe 100% da altura */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 8px 0;
+    color: #666;
+    width: 100%;
+    position: relative; /* Garante que o rodapé não sobreponha conteúdo */
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* ----------------------------------- */
+/* ESTILOS RESPONSIVOS */
+/* ----------------------------------- */
+@media (max-width: 768px) {
+    /* Ajustes para cabeçalho e navegação */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /* Ajustes para a seção principal */
+    .seção {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .seção-imagem-esquerda img, .seção-imagem-direita img {
+        max-width: 90%; /* A imagem agora ocupa 90% da largura em telas menores */
+        height: 250px; /* Aumentando a altura da imagem para telas pequenas */
+    }
+
+    /* Ajustes para textos */
+    .seção-texto h2 {
+        font-size: 35px; /* Ajustando o tamanho do título para telas menores */
+    }
+
+    .seção-texto p {
+        font-size: 17px; /* Reduzindo um pouco o tamanho do texto para telas pequenas */
+    }
+
+    /* Ajuste para o título principal */
+    .titulo-principal {
+        font-size: 48px; /* Ajustando o tamanho do título para telas menores */
+    }
+}
